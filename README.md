@@ -2,7 +2,7 @@
 OTV software and hardware files will be shared here, along with meeting notes/drawings. Please check the Projects Tab for project management information and feel free to add any tasks. 
 
 ## Friday Meetings (3:30 PM)
-A. James Clark Hall 1st Floor lab or ESJ (Check GroupMe)
+A. James Clark Hall 1st Floor lab (AJC 1106)
 
 ## Zoom (Sundays at 4:00 PM)
 https://zoom.us/j/91319920418?pwd=M0MwV3JXcXBmYTV5WVVOekVZaG5uUT09
