@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------------------------
+MOTOR INTERFACE API
+-----------------------------------------------------------------------------------------------------------------
+
+void MotorL(char dir, int on);
+
+MotorL sets the left motor to go in direction dir ('f' for forward, 'b' for backward) and stay powered if on == 1.
+Otherwise, left motor has no power and does not move.
+
+
+void MotorR(char dir, int on);
+
+MotorR sets the left motor to go in direction dir ('f' for forward, 'b' for backward) and stay powered if on == 1.
+Otherwise, right motor has no power and does not move.
