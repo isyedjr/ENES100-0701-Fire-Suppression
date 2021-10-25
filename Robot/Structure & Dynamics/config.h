@@ -1,3 +1,4 @@
 /* Define motor pins */
-#define
-#define
+#define RIGHT1
+#define 
+
