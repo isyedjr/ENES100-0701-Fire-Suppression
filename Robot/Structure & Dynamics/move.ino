@@ -9,32 +9,32 @@ void setup() {
 	pinMode(enL, OUTPUT);
 }
 
-void MotorL(char dir, int on) {
+void MotorL(char dir, int on, int power) {
 	if(on == 1) {
 		digitalWrite(enL, HIGH);
 	} else {
 		digitalWrite(enL, LOW);
 	}
 	if(dir == 'f') {
-		digitalWrite(LF, HIGH);
+		analogWrite(LF, power);
 		digitalWrite(LB, LOW);
 	} else if(dir == 'b') {
-		digitalWrite(LB, HIGH);
+		analogWrite(LB, power);
 		digitalWrite(LF, LOW);
 	}
 }
 
-void MotorR(char dir, int on) {
+void MotorR(char dir, int on, int power) {
 	if(on == 1) {
 		digitalWrite(enR, HIGH);
 	} else {
 		digitalWrite(enR, LOW);
 	}
 	if(dir == 'f') {
-		digitalWrite(RF, HIGH);
+		analogWrite(RF, power);
 		digitalWrite(RB, LOW);
 	} else if(dir == 'b') {
-		digitalWrite(RB, HIGH);
+		analogWrite(RB, power);
 		digitalWrite(RF, LOW);
 	}
 }
