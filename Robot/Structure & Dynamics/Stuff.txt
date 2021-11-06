@@ -1,0 +1,21 @@
+RDS
+Trig 52
+Echo 53
+
+LDS
+Trig 51
+Echo 50
+
+Stepper
+In1 22
+In2 24
+In3 25
+In4 23
+
+IC closest to Arduino
+EN1 13
+EN2 7
+
+IC far
+EN1 4
+EN2 10
