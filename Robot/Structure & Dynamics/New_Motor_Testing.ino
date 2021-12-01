@@ -20,6 +20,14 @@
 #define RB_for 9
 #define Ystart A8
 
+struct transmission {
+  double x;
+  double y;
+  double t;
+};
+
+transmission data;
+
 // Setting up the left distance sensor
 int LeftTrigPin=51;
 int LeftEchoPin=50;
@@ -139,13 +147,19 @@ void setup() {
   pinMode (RightEchoPin, INPUT);
     pinMode(LeftTrigPin, OUTPUT);
   pinMode (LeftEchoPin, INPUT);
+  Wire.begin();
   Serial.begin(9600);
 }
 
 void loop() {
   
-  Serial.print(analogRead(A8));
-  Serial.println(" test");
+  Wire.readBytes((byte*) &data, sizeof(data));
+  Serial.println("X:");
+  Serial.println(data.x);
+  Serial.println("Y:");
+  Serial.println(data.y);
+  Serial.println("T:");
+  Serial.println(data.t);
   
   /*
   if(analogRead(A8) >= 700){
